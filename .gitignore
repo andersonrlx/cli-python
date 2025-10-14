@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.build/
+dist/
+build/
+.venv/
+.env
+.env.*
+.mypy_cache/
+pytest_cache/
+.infra-cli/
+templates_cache/
+node_modules/
+*.log
+*.tmp

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infra-cli-py"
+version = "0.1.0"
+description = "CLI em Python para gerar boilerplates (Kubernetes/Terraform) a partir de qualquer diretório"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Anderson", email="anderson@example.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "typer[all]>=0.12.3",
+    "Jinja2>=3.1.2",
+    "GitPython>=3.1.43",
+    "rich>=13.7.1"
+]
+
+[project.scripts]
+infra = "infra_cli.__main__:main"
